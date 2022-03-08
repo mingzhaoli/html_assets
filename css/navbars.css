@@ -34,6 +34,11 @@ nav a {
     height: 65px;
 }
 
+.nav-left {
+    display: flex;
+    margin-right: auto;
+}
+
 .nav-right {
     display: flex;
     margin-left: auto;
