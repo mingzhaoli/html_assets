@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+/* General CSS */
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +15,23 @@ nav a {
     text-decoration: none;
 }
 
-.navbar ul {
+li {
+    list-style-type: none;
+}
+
+.nav-left {
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-right {
+    display: flex;
+    margin-left: auto;
+}
+
+/* Example One CSS */
+
+.example-one ul {
     padding: 0;
     display: flex;
     height: 65px;
@@ -28,29 +45,44 @@ nav a {
     margin: 20px;
 }
 
-.navbar li {
+.example-one li {
     padding: 20px;
-    list-style-type: none;
     height: 65px;
 }
 
-.nav-left {
-    display: flex;
-    margin-right: auto;
-}
-
-.nav-right {
-    display: flex;
-    margin-left: auto;
-}
-
-.navbar input {
+.example-one input {
     margin: 18px 15px 0px 15px;
     height: 25px;
     border-color: #F9C784;
     border-radius: 20px;
 }
 
-.navbar li:hover {
+.example-one li:hover {
     background-color: #FCAF58;
+}
+
+/* Example Two CSS */
+.example-two ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+
+    border-top: solid black;
+    border-bottom:solid  black;
+}
+
+.example-two li {
+    padding: 10px;
+    margin: 10px;
+
+    border: 2px outset gray;
+}
+
+.example-two li:hover {
+    background: linear-gradient(to left bottom, white, black);
+}
+
+.example-two a:hover {
+    color: white;
 }
